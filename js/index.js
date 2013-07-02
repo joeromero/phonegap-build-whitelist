@@ -82,6 +82,14 @@ var app = {
         },
         {
             url:"http://build.phonegap.com",
+            should_work: true
+        },
+        {
+            url:"http://build.phonegap.com/docs/config-xml",
+            should_work: true
+        },
+        {
+            url:"http://nhl.com",
             should_work: false
         }
     ]
