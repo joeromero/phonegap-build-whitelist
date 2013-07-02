@@ -51,25 +51,29 @@ var app = {
 
     testDomains: function() {
         for (var i in app.domains) {
-            $.ajax({
-                url:app.domains[i].url,
-                success:function() {
-                    if (app.domains[i].should_work) {
-                        console.log(app.domains[i].url + " reachable as exepcted");
-                    } else {
-                        console.log(app.domains[i].url + " should not be reachable");
-                    }
-                },
-                error:function() {
-                    if (app.domains[i].should_work) {
-                        console.log(app.domains[i].url + " should be reachable");
-                    } else {
-                        console.log(app.domains[i].url + " unreachable as exepcted");
-                    } 
-                }
-            })
+            app.test(app.domains[i]);
         }
     },
+
+    test: function(d) {
+        $.ajax({
+            url:d.url,
+            success:function() {
+                if (d.should_work) {
+                    console.log(d.url + " reachable as exepcted");
+                } else {
+                    console.log(d.url + " should not be reachable");
+                }
+            },
+            error:function() {
+                if (d.should_work) {
+                    console.log(d.url + " should be reachable");
+                } else {
+                    console.log(d.url + " unreachable as exepcted");
+                } 
+            }
+        })
+    }
 
     domains:[
         {
