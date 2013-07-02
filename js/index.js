@@ -73,7 +73,7 @@ var app = {
                 } 
             }
         })
-    }
+    },
 
     domains:[
         {
