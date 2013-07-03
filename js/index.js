@@ -105,6 +105,14 @@ var app = {
         {
             url:"http://cnn.com",
             should_work: false
+        },
+        {
+            url:"http://docs.phonegap.com",
+            should_work: false
+        },
+        {
+            url:"http://wordpress.org",
+            should_work: false
         }
     ]
 };
