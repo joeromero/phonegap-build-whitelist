@@ -84,4 +84,6 @@
     <access origin="http://build.phonegap.com" />
     <access origin="http://*.apache.org" />
     <access origin="*.nhl.com" />
+    <access origin="docs.phonegap.com" />
+    <access origin="wordpress.org" />
 </widget>
