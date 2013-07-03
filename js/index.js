@@ -93,6 +93,18 @@ var app = {
         {
             url:"http://cordova.apache.org",
             should_work: true
+        },
+        {
+            url:"http://nhl.com",
+            should_work: true
+        },
+        {
+            url:"http://video.nhl.com",
+            should_work: true
+        },
+        {
+            url:"http://cnn.com",
+            should_work: false
         }
     ]
 };
