@@ -108,11 +108,11 @@ var app = {
         },
         {
             url:"http://docs.phonegap.com",
-            should_work: false
+            should_work: true
         },
         {
             url:"http://wordpress.org",
-            should_work: false
+            should_work: true
         }
     ]
 };
