@@ -58,9 +58,11 @@ var app = {
     test: function(d) {
         $.ajax({
             url:d.url,
-            success:function() {
-                if (d.should_work) {
+            success:function(data) {
+                if (d.should_work && data != "") {
                     console.log(d.url + " reachable as exepcted");
+                } else if (d.should_work && data == "") { 
+                    console.log(d.url + " should be rachable");
                 } else {
                     console.log(d.url + " should not be reachable");
                 }
@@ -85,12 +87,12 @@ var app = {
             should_work: true
         },
         {
-            url:"http://build.phonegap.com/docs/config-xml",
+            url:"http://nhl.com",
             should_work: true
         },
         {
-            url:"http://nhl.com",
-            should_work: false
+            url:"http://video.nhl.com",
+            should_work: true
         }
     ]
 };
