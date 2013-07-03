@@ -62,7 +62,7 @@ var app = {
                 if (d.should_work && data != "") {
                     console.log(d.url + " reachable as exepcted");
                 } else if (d.should_work && data == "") { 
-                    console.log(d.url + " should be rachable");
+                    console.log(d.url + " should be reachable");
                 } else {
                     console.log(d.url + " should not be reachable");
                 }
@@ -87,11 +87,11 @@ var app = {
             should_work: true
         },
         {
-            url:"http://nhl.com",
+            url:"http://apache.org",
             should_work: true
         },
         {
-            url:"http://video.nhl.com",
+            url:"http://cordova.apache.org",
             should_work: true
         }
     ]
